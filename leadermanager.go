@@ -13,7 +13,7 @@ type Backend interface {
 	// WriteEntry attempts to put/update an entry to the storage
 	// using condition to evaluate the TTL.
 	// Returns true if the lock was obtained, false if not.
-	// If error is not nil mean something unexpected happend, and
+	// If error is not nil mean something unexpected happened, and
 	// is not equivalent with false.
 	WriteEntry(context.Context, string, time.Duration) (bool, error)
 }

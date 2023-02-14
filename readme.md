@@ -29,7 +29,7 @@ func main() {
 		fmt.Printf("leader elected %s\n", id)
 	}
 	le.OnOusting = func(id string, cancel context.CancelFunc) {
-		fmt.Printf("leader outsting %s\n", id)
+		fmt.Printf("leader ousting %s\n", id)
 	}
 	le.OnError = func(id string, err error, cancel context.CancelFunc) {
 		fmt.Printf("shit happens for leader %s %v\n", id, err)
